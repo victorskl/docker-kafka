@@ -19,6 +19,7 @@ services:
       - ALLOW_PLAINTEXT_LISTENER=yes
       - KAFKA_LISTENERS=PLAINTEXT://:9092
       - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
+      - KAFKA_DELETE_TOPIC_ENABLE=true
     volumes:
       - ./kafka:/bitnami/kafka
     restart: always
